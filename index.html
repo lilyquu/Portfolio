@@ -7,6 +7,7 @@
 	<meta name="keywords" content="HTML, CSS, JavaScript" />
 	<meta name="author" content="Yuxiao(Lily) Qu" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Home Page</title>
 	<img herf="placeholder" rel="logo" />
 	<link href="images/favicon.ico" rel="icon" />
 	<link href="styles/main.css" rel="stylesheet" />
@@ -21,23 +22,36 @@
             <a href="coder.html">Coder</a>
             <a href="designer.html">Designer</a>
             <a href="artist.html">Artist</a>
-			<button onclick="document.location='resume.html'">RESUME</button>
+			<!-- <button onclick="document.location='resume.html'">RESUME</button> -->
+			<button>RESUME</button>
         </nav>
 	</header>
 
 	<main>
                 
         <section id="main-page">
-            <img src="./images/placeholder.png" id="scroll-down"/>
+            <aside>Scroll Down<img src="./images/placeholder.png" id="scroll-down"/></aside>
             <h1><b>Hello.</b></h1>
             <h2>I am <b>Lily Qu,</b></h2>
             <p>place holder for one sentence introduction</p>
-            <img src="./images/placeholder.png" id="about-me-pic"/>
+			<picture>
+				<source
+				   srcset="./images/placeholder.png 400w,
+				           ./images/placeholder.png 800w,
+						   ./images/placeholder.png 1200w"
+				   sizes="(min-width: 1280px) 1200px,
+						  (min-width: 768px) 400px,
+						  100vw">
+				<img src="./images/placeholder.png" id="about-me-pic"/>
+			</picture>
         </section>
 
 		<section id="about-me">
             <article>
-                place holder for written part, the about me section, later.
+                <strong>place holder</strong> for written part, the about me section, later.<br>
+				This paragraph is here for experiment on different text style to satisfy the requirment for CSE134 homework.
+				thissss here here here here.
+				<em>Again</em> here here here <i>again</i>.
             </article>
 		</section>
 
@@ -46,6 +60,73 @@
 	<footer>
 		<hr/>
 		<p>Copyrights @ 2023 Yuxiao(Lily) Qu</p>
+		<spam>No CSS for NOW</spam>
+		<hr/>
+		<figure>
+			<video controls autoplay muted>
+				<source src="videos/dogee.mov" type="video/mp4" controls>
+			</video>
+			<audio controls autoplay>
+				<source src="audios/BGM.mp3" type="audio/mp3">
+			</audio>
+			<figcaption>Extral Part for homework requirment</figcaption>
+		</figure>
+		<label>Do you like the low fi portfolio:</label>
+		<select>
+    		<optgroup label="Being Nice">
+        		<option>Absolutely</option>
+        		<option>For sure</option>
+        		<option>No doubbbt</option>
+    		</optgroup>
+    		<optgroup label="Otherwise">
+        		<option>L**e it!</option>
+				<option>1**%</option>
+    		</optgroup>
+		</select>
+		<hr/>
+
+		<form>
+			<fieldset>
+			 <legend>Contact Me:</legend>
+			 <label>Name:</label><br>
+			 <input type="text" value="Lily"><br>
+			 <label>Email:</label><br>
+			 <input type="text"value="lilyqu1216@gmail.com"><br>
+			 <label>Send:</label><br>
+			 <textarea></textarea><br>
+			 <input type="submit" value="Submit"><br>
+
+			 <label>Rate my portfolio:</label>
+			 <input list="rating">
+			 <datalist id="rating">
+				 <option value="1">
+				 <option value="2">
+				 <option value="3">
+				 <option value="4">
+				 <option value="5">
+			 </datalist>
+
+			</fieldset>
+		</form>
+
+		<hr/>
+		<details>
+			<summary>Okay You Found Me! QuQ</summary>
+			<img src="./images/patpat.gif">
+		</details>
+
+		<template>
+			<h2>Why Why Why</h2>
+			<img src="./images/patpat.gif">
+			<ol>
+                <li><a href="coder.html">Coder</a></li>
+                <li><a href="designer.html">Designer</a></li>
+                <li><a href="artist.html">Artist</a></li>
+            </ol>
+		</template>
+		<svg width="300" height="100">
+			<text y="50" font-size="30">Why Why Why</text>
+		</svg>
 	</footer>
 
 </body>

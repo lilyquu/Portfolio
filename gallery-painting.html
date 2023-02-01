@@ -7,6 +7,7 @@
 	<meta name="keywords" content="HTML, CSS, JavaScript" />
 	<meta name="author" content="Yuxiao(Lily) Qu" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Painting Gallery</title>
 	<img herf="placeholder" rel="logo" />
 	<link href="images/favicon.ico" rel="icon" />
 	<link href="styles/main.css" rel="stylesheet" />
@@ -24,15 +25,35 @@
                 <li><a href="artist.html">Artist</a></li>
             </ul>
         </nav>
-        <button onclick="document.location='resume.html'">RESUME</button>
+		<!-- <button onclick="document.location='resume.html'">RESUME</button> -->
+		<button>RESUME</button>
 	</header>
 
 	<main>
                 
         <section id="gallery-page">
-            <title>Gallery</title>
+            <h1>Gallery</h1>
+			<table>
+				<caption>Not supposed to have this one :(</caption>
+				<colgroup>
+				  <col span="3">
+				</colgroup>
+				<tr>
+				  <th><img src="./images/painting/placeholder.png" class="painting"></th>
+				  <th><img src="./images/painting/placeholder.png" class="painting"></th>
+				  <th><img src="./images/painting/placeholder.png" class="painting"></th>
+				</tr>
+				<tr>
+					<td><img src="./images/painting/placeholder.png" class="painting"></td>
+					<td><img src="./images/painting/placeholder.png" class="painting"></td>
+					<td><img src="./images/painting/placeholder.png" class="painting"></td>
+				</tr>
+				<tr>
+					<td><img src="./images/painting/placeholder.png" class="painting"></td>
+					<td><img src="./images/painting/placeholder.png" class="painting"></td>
+				</tr>
+			  </table>
             <!--use function to control image iteration later-->
-            <img src="./images/painting/placeholder.png" class="painting">
         </section>
 
 	</main>
@@ -41,11 +62,7 @@
 		<hr/>
 		<p>Copyrights @ 2023 Yuxiao(Lily) Qu</p>
 	</footer>
-	<script type="module">
-		import { update } from './scripts/main.js';
-		window.update = update;
-	</script>
-	<script nomodule src="scripts/main-es5.js"></script>
+
 </body>
 
 </html>
