@@ -71,7 +71,7 @@
 			</audio>
 			<figcaption>Extral Part for homework requirment</figcaption>
 		</figure>
-		<label>Do you like the low fi portfolio:</label>
+		<label>Do you like this "low-fi" portfolio:</label>
 		<select>
     		<optgroup label="Being Nice">
         		<option>Absolutely</option>
@@ -111,7 +111,7 @@
 
 		<hr/>
 		<details>
-			<summary>Okay You Found Me! QuQ</summary>
+			<summary style="color:red;">Okay You Found Me! QuQ</summary>
 			<img src="./images/patpat.gif">
 		</details>
 
@@ -124,9 +124,19 @@
                 <li><a href="artist.html">Artist</a></li>
             </ol>
 		</template>
-		<svg width="300" height="100">
-			<text y="50" font-size="30">Why Why Why</text>
-		</svg>
+		<hr/>
+		<svg width="300" height="80">
+			<text y="50" font-size="30">Why Doing This...</text>
+		</svg><br>
+
+		<canvas id="myCanvas" width="600" height="60"></canvas>
+		<script>
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			ctx.font = "30px Arial";
+			ctx.fillText("Goodbey. Farewell.", 10, 25);
+		</script>
+
 	</footer>
 
 </body>
